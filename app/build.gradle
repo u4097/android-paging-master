@@ -48,6 +48,10 @@ dependencies {
     implementation group: 'androidx.room', name: 'room-runtime', version: '2.1.0-alpha05'
     kapt  group: 'androidx.room', name: 'room-compiler', version: '2.1.0-alpha05'
 
+    // Chuck
+//    implementation "com.readystatesoftware.chuck:library:1.1.0"
+//    releaseImplementation "com.readystatesoftware.chuck:library-no-op:1.1.0"
+
     // retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation"com.squareup.retrofit2:converter-gson:$retrofitVersion"
