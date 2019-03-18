@@ -16,6 +16,7 @@
 
 package com.example.android.codelabs.paging.api
 
+import android.content.Context
 import android.util.Log
 import com.example.android.codelabs.paging.model.Repo
 import okhttp3.OkHttpClient
@@ -93,7 +94,7 @@ interface GithubService {
     companion object {
         private const val BASE_URL = "https://api.github.com/"
 
-        fun create(): GithubService {
+        fun create(context: Context): GithubService {
             val logger = HttpLoggingInterceptor()
             logger.level = Level.BASIC
 
