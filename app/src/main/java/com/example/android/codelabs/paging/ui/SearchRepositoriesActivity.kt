@@ -124,6 +124,7 @@ class SearchRepositoriesActivity : AppCompatActivity() {
 				val totalItemCount = layoutManager.itemCount
 				val visibleItemCount = layoutManager.childCount
 				val lastVisibleItem = layoutManager.findLastVisibleItemPosition()
+				Log.d("SCROLL", "total: ${totalItemCount}, visible: $visibleItemCount, last visible: $lastVisibleItem")
 
 				viewModel.listScrolled(visibleItemCount, lastVisibleItem, totalItemCount)
 			}
